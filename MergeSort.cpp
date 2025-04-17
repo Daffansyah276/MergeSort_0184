@@ -80,7 +80,7 @@ void mergeSort(int low, int high)
        i++;           // step 4.f.ii
        k++;           // step 4.f.iii
    }
-   
+
     // step 5
     for (int x = low; x <= high; x++)
     {
@@ -88,3 +88,19 @@ void mergeSort(int low, int high)
     }
 }
 
+void output()
+{
+    cout << "\nData setelah diurutkan (Merge Sort): ";
+    for (int i = 0; i < n; i++)
+    {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+}
+
+int main()
+{
+    input();
+    mergeSort(0, n - 2);
+    output();
+}
